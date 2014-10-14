@@ -1,9 +1,8 @@
-#include <stdlib.h>
 #include "utils.h"
 
-int length(int array[])
+int length(const int* const array)
 {
-	int count = 0;
-	while (array[++count]);
-	return count;
+    int count = 0;
+    while (array[++count]);
+    return count;
 }

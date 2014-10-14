@@ -1,3 +1,3 @@
 #pragma once
 
-int length(int array[]);
+int length(const int* const array);
