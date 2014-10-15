@@ -118,8 +118,8 @@ int main(int argc, char** argv)
             start = clock();
         sort((void*)mksargs(array,0,len));
         end = clock();
-        write(argv[2],array);
         printf("Time passed: %.2f s\n",(double)(end - start) / CLOCKS_PER_SEC);
+        write(argv[2],array);
     }
     free(array);
     return 0;
